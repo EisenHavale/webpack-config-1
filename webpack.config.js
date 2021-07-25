@@ -1,19 +1,19 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        another: './src/assets/js/components/another-module.js',
+        another: './src/js/components/another-module.js',
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
     },
     output: {
-        filename: './components/[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: './components/[name].js',
         clean: true,
 
     },
@@ -26,21 +26,28 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
+                exclude: /style.css$/,
                 use: ['style-loader', 'css-loader'],
+
+            },
+
+            {
+                test: /style.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
 
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'img/[hash][ext][query]',
+                    filename: 'img/[name]',
                 }
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'font/[hash][ext][query]',
+                    filename: 'font/[name]',
                 }
 
             },
@@ -50,7 +57,17 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Development',
+            template: './src/index.html',
+            filename: 'index.html'
         }),
+        new MiniCssExtractPlugin(
+            {
+                filename: "./css/style.css",
+                chunkFilename: "[id].css",
+                ignoreOrder: false
+
+            },
+        ),
     ],
 
 };

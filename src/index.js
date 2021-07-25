@@ -1,6 +1,6 @@
 import './css/style.css';
 import Icon from './assets/img/icon.png';
-import printMe from '../src/assets/js/components/print';
+import printMe from './js/components/print';
 
 function component() {
     const element = document.createElement('div');

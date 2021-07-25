@@ -10,7 +10,7 @@ module.exports = {
     mode: 'production',
     entry: {
         index: './src/index.js',
-        another: './src/assets/js/components/another-module.js',
+        another: './src/js/components/another-module.js',
     },
 
     output: {
