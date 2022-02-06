@@ -71,7 +71,9 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
+            title: 'Production',
+            template: './src/index.html',
+            filename: 'index.html'
         }),
         new MiniCssExtractPlugin(
             {

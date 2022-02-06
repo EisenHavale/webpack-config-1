@@ -38,5 +38,5 @@ const IconImage =()=>{
 
 
 document.body.appendChild(component());
-// document.head.appendChild(IconImage());
+document.head.appendChild(IconImage());
 console.log(link);
