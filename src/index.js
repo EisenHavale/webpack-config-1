@@ -1,6 +1,9 @@
 import './css/style.css';
 import Icon from './assets/img/icon.png';
 import printMe from './js/components/print';
+import realIcon from './assets/img/mountains.png';
+
+const link = document.querySelector('#Icon');
 
 function component() {
     const element = document.createElement('div');
@@ -24,4 +27,16 @@ function component() {
     return element;
 }
 
+const IconImage =()=>{
+    link.rel = 'icon';
+    link.type = "favicon/x-icon";
+    link.href = realIcon;
+    return link
+
+}
+
+
+
 document.body.appendChild(component());
+// document.head.appendChild(IconImage());
+console.log(link);

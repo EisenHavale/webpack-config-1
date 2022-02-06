@@ -1,0 +1,21 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*********************************************************************/
+@font-face {
+    font-family: 'Bbneue';
+    src: url(../font/BebasNeue);
+}
+
+body{
+    background-color: aqua;
+    background: url(../img/heart);
+}
+
+.hello{
+    font-family: 'Bbneue';
+    font-size: 45px;
+    color: rgb(157, 71, 71)
+    
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93ZWJwYWNrLWRlbW8vLi9zcmMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHFCQUFxQjtJQUNyQiw0Q0FBeUM7QUFDN0M7O0FBRUE7Q0FDMEI7QUFDb0I7QUFDOUM7O0FBRUE7Q0FDeUI7QUFDTjtJQUNmOztBQUVKIiwiZmlsZSI6Ii4vY3NzL3N0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdCYm5ldWUnO1xyXG4gICAgc3JjOiB1cmwoJy4uL2Fzc2V0cy9mb250cy9CZWJhc05ldWUub3RmJyk7XHJcbn1cclxuXHJcbmJvZHl7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBhcXVhO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi9hc3NldHMvaW1nL2hlYXJ0LnBuZycpO1xyXG59XHJcblxyXG4uaGVsbG97XHJcbiAgICBmb250LWZhbWlseTogJ0JibmV1ZSc7XHJcbiAgICBmb250LXNpemU6IDQ1cHg7XHJcbiAgICBjb2xvcjogcmdiKDE1NywgNzEsIDcxKVxyXG4gICAgXHJcbn0iXSwic291cmNlUm9vdCI6IiJ9*/
