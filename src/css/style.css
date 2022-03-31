@@ -4,13 +4,57 @@
 }
 
 body{
+    height:100vh; 
+    margin:0;
+    display:flex;
+    flex-direction: column;
     background-color: aqua;
     background: url('../assets/img/heart.png');
+    overflow:visible;
 }
 
+.boxContent{
+    height:100%;
+    width:100%;
+}
+
+/* ::-webkit-scrollbar{
+    width:10px;
+} */
 .hello{
     font-family: 'Bbneue';
     font-size: 45px;
     color: rgb(157, 71, 71)
     
 }
+
+.Footer{
+    width: 100%;
+    margin-top:100vh; 
+    background-color:#000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Footer__CreatorInfo{
+    
+    width: 80%;
+    height: 100%;
+}
+
+.Footer__CreatorInfo > h2 > a{
+    color: #fff;
+}
+.Footer__Clock{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    row-gap: 20%;
+    flex-direction: column;
+}
+
+
